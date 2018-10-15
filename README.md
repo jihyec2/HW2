@@ -14,14 +14,14 @@
 2. Ask a question that requires a student to understand the difference between accessing a column in a matrix with numeric indices versus accessing a column in a data frame with numeric indices. Your question should require an answer comparing the following: mymatrix[,1] vs. mydf[,1] vs. mydf[1] vs. mydf[[1]].
 * Create a 3x6 matrix. Furthermore, obtain a spreadsheet data from the web and subsetting the dataframe like a matrix. Then explain the differences between mymatrix[,1] vs. mydf[,1] vs. mydf[1] vs. mydf[[1]].  
 
-mymatrix <- matrix(data = 1:18, nrow = 3, ncol = 6, byrow = TRUE)
-mymatrix
+      mymatrix <- matrix(data = 1:18, nrow = 3, ncol = 6, byrow = TRUE)
+      mymatrix
 
-require('RCurl') #obtain data from the web
-mlbweightdfurl <- 'http://goo.gl/rih9v9'
-mlb.weight.df <- textConnection(getURL(mlbweightdfurl, followlocation  = TRUE))
-mlb.weight.df <- read.table(mlb.weight.df, header = TRUE) 
-mlb.weight.df.subset[1:3,1:6] #subsetting the dataframe (show the first three rows and six columns of the dataset)
+      require('RCurl') #obtain data from the web
+      mlbweightdfurl <- 'http://goo.gl/rih9v9'
+      mlb.weight.df <- textConnection(getURL(mlbweightdfurl, followlocation  = TRUE))
+      mlb.weight.df <- read.table(mlb.weight.df, header = TRUE) 
+      mlb.weight.df.subset[1:3,1:6] #subsetting the dataframe (show the first three rows and six columns of the dataset)
 
 mymatrix is a 3x4 matrix filled with the number from 1 to 12 in row major order. 
 mymatrix[,1] prints the first column of the matrix, 
@@ -46,22 +46,22 @@ Hint 2: in order for a script to be executable, all of its parent directories mu
 * Create a simple script named _file_ under _Math225_, and make it usable by everyone but only writeable by its creator by using chmod NNN(using octal permissions). 
 
 
-640 = 110 100 000 # Group members and I can read. Only I can write
-644 = 110 100 100 # Others, group members, and I can read. Only I can write.
-744 =i can read write execute whereas everyone else can only read
-cd UCI/Math/Math225
-ls -l #list all files in the directory
+      640 = 110 100 000 # Group members and I can read. Only I can write
+      644 = 110 100 100 # Others, group members, and I can read. Only I can write.
+      744 =i can read write execute whereas everyone else can only read
+      cd UCI/Math/Math225
+      ls -l #list all files in the directory
 
-#create a file 
-touch file 
-echo "text" > file #That method overwrites the contents of file to text.
-cat << EOF > file #contents of my file 
-test 1
-test 2 
-test 3
-EOF
+      #create a file 
+      touch file 
+      echo "text" > file #That method overwrites the contents of file to text.
+      cat << EOF > file #contents of my file 
+      test 1
+      test 2 
+      test 3
+      EOF
 
-chmod +x file #make it executable
+      chmod +x file #make it executable
 
-man chomod
-chomod 744 filename 
+      man chomod
+      chomod 744 filename 
