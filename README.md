@@ -9,7 +9,7 @@
       cd Math 
       mkdir Math225
       pwd #print working directory will give us "/data/users/jihyec2/UCI/Math/Math225"
-      cd ../ #go back to the parent directory of _Math_, which is _UCI_
+      cd ../ #go back to the parent directory of Math, which is UCI
       rmdir Bio
 
 2. Ask a question that requires a student to understand the difference between accessing a column in a matrix with numeric indices versus accessing a column in a data frame with numeric indices. Your question should require an answer comparing the following: mymatrix[,1] vs. mydf[,1] vs. mydf[1] vs. mydf[[1]].
@@ -22,14 +22,14 @@
       mlbweightdfurl <- 'http://goo.gl/rih9v9'
       mlb.weight.df <- textConnection(getURL(mlbweightdfurl, followlocation  = TRUE))
       mlb.weight.df <- read.table(mlb.weight.df, header = TRUE) #read only several lines of the table. 
-      mydf <- mlb.weight.df[1:3,1:6] #subsetting the dataframe (show the first three rows and six columns of the dataset)
+      mydf <- mlb.weight.df[1:3,1:6] #subsetting the dataframe (show the first three rows and six columns of table)
       mydf[,1]
       mydf[1]
       mydf[[1]]
       
 
 First of all, I create a 3x6 matrix, **mymatrix**, filled with the number from 1 to 18 in row major order. Then **mymatrix[,1]** prints the first column of the matrix, which is  **[1]  1  7 13**.
-Next, I import the data from the web and subset the data, naming it as mydf. mydf[,1] and mydf[[1]] are basically same and give me the first column of the table as vectors, whereas mydf[1] shows me the first column of the table as a dataframe.
+Next, I import the data from the web and subset the data, naming it as mydf. mydf[,1] and mydf[[1]] are basically the same and give me the first column of the table as vectors. However mydf[1] shows me the first column of the table as a dataframe.
 
 
 3. Ask a question that requires a student to understand how to create a simple script and make it usable by everyone, but only writeable by its creator. Your question should require an answer using chmod NNN (using octal permissions).
