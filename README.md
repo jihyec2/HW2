@@ -29,11 +29,11 @@
       
 
 First of all, I create a 3x6 matrix, **mymatrix**, filled with the number from 1 to 18 in row major order. Then **mymatrix[,1]** prints the first column of the matrix, which is  **[1]  1  7 13**.
-Next, I import the data from the web and subset the data, naming it as mydf. mydf[,1] and mydf[[1]] are basically the same and give me the first column of the table as vectors. However mydf[1] shows me the first column of the table as a dataframe.
+Next, I import the data from the web and subset the data, naming it as mydf. mydf[,1] and mydf[[1]] are basically the same and give me the first column of the table as vectors. However, mydf[1] shows me the first column of the table as a dataframe.
 
 
-3. Ask a question that requires a student to understand how to create a simple script and make it usable by everyone, but only writeable by its creator. Your question should require an answer using chmod NNN (using octal permissions).
-Hint 1: in order for a script to be executable, it must be readable and executable
+3. Ask a question that requires a student to understand how to create a simple script and make it usable by everyone, but only writeable by its creator. Your question should require an answer using chmod NNN (using octal permissions).  
+Hint 1: in order for a script to be executable, it must be readable and executable  
 Hint 2: in order for a script to be executable, all of its parent directories must be executable
 
 * Create a simple script named _file_ under _jihye_, and make it usable(readable and executable) by everyone(including group members) but only writeable by its creator by using chmod NNN(using octal permissions). 
