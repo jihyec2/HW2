@@ -38,14 +38,14 @@ Hint 2: in order for a script to be executable, all of its parent directories mu
 
 * Create a simple script and make it usable(readable and executable) by everyone(including group members) but only writeable by its creator by using chmod NNN(using octal permissions). 
 
-      mkdir jihye #make directory as _jihye_
+      mkdir jihye #make directory as jihye
       ls #list the contents of my current directory 
       cd ./jihye #change directory to jihye
-      touch file #create script called _file_
-      ls -l #list the contents of _jihye_ and check the permission status of its contents
-      chmod 755 file #change the permission of _file_
+      touch file #create script called file
+      ls -l #list the contents of jihye and check the permission status of its contents
+      chmod 755 file #change the permission of file
       ls -l #confirm that permission is changed by showing the list
-      cd .. #go back to the parent directory of _jihye_
-      chmod 755 jihye #change the permission of _jihye_
+      cd .. #go back to the parent directory of jihye
+      chmod 755 jihye #change the permission of jihye
       ls -l #confirm that permission is changed by showing the list
       
