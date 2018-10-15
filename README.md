@@ -36,7 +36,7 @@ Next, I import the data from the web and subset the data, naming it as mydf. myd
 Hint 1: in order for a script to be executable, it must be readable and executable  
 Hint 2: in order for a script to be executable, all of its parent directories must be executable
 
-* Create a simple script named _file_ under _jihye_, and make it usable(readable and executable) by everyone(including group members) but only writeable by its creator by using chmod NNN(using octal permissions). 
+* Create a simple script, and make it usable(readable and executable) by everyone(including group members) but only writeable by its creator by using chmod NNN(using octal permissions). 
 
       mkdir jihye #make directory as _jihye_
       ls #list the contents of my current directory 
