@@ -32,47 +32,20 @@ First of all, I create a 3x6 matrix, **mymatrix**, filled with the number from 1
 Next, I import the data from the web and subset the data, naming it as mydf. mydf[,1] and mydf[[1]] are basically same and give me the first column of the table as vectors, whereas mydf[1] shows me the first column of the table as a dataframe.
 
 
-3. Ask a question that requires a student to understand how to share access to a directory and a file in that directory on a Unix/Linux filesystem from their home directory with a colleague without exposing the user's entire directory. Your question should require an answer using chmod {u,g,o}{+,-}{r,w,x} (not using octal permissions).
-Hint 1: in order to view a file, all of its parent directories must be executable
-Hint 2: in order to view a file, the file itself must be readable
-
-r 040
-w 200
-x 100
-chmod 740 name of file (executable)
-
-admin group everyone
-
-Ask a question that requires a student to understand how to create a simple script and make it usable by everyone, but only writeable by its creator. Your question should require an answer using chmod NNN (using octal permissions).
+3. Ask a question that requires a student to understand how to create a simple script and make it usable by everyone, but only writeable by its creator. Your question should require an answer using chmod NNN (using octal permissions).
 Hint 1: in order for a script to be executable, it must be readable and executable
 Hint 2: in order for a script to be executable, all of its parent directories must be executable
 
-* Create a simple script named _file_ under _Math225_, and make it usable by everyone but only writeable by its creator by using chmod NNN(using octal permissions). 
-      mkdir jihye
-      ls
-      cd ./jihye
-      touch file
-      ls -l #check the permission status
-      chmod 755 file 
-      ls -l
-      cd ..cd 
-      chmod 755 jihye
-      ls -l #
+* Create a simple script named _file_ under _jihye_, and make it usable(readable and executable) by everyone(including group members) but only writeable by its creator by using chmod NNN(using octal permissions). 
+
+      mkdir jihye #make directory as _jihye_
+      ls #list the contents of my current directory 
+      cd ./jihye #change directory 
+      touch file #create script called _file_
+      ls -l #list the contents of _jihye_ and check the permission status of the contents
+      chmod 755 file #change the permission of _file_
+      ls -l #confirm that permission is changed by showing the list
+      cd .. #go back to the parent directory of _jihye_
+      chmod 755 jihye #change the permission of _jihye_
+      ls -l #confirm that permission is changed by showing the list
       
-
-    
-
-
-      #create a file 
-      touch file 
-      echo "text" > file #That method overwrites the contents of file to text.
-      cat << EOF > file #contents of my file 
-      test 1
-      test 2 
-      test 3
-      EOF
-
-      chmod +x file #make it executable
-
-      man chomod
-      chomod 744 filename 
