@@ -3,14 +3,14 @@
 1. Ask a question that requires a student to understand navigation and manipulation of directories in a filesystem. Your question should require an answer using at least the following commands/concepts: cd, ../, mkdir, rmdir  
 * Create a new directory named _UCI_ in your current directory, several new subdirectory named _Bio, Computer, Math_, and then create a subdirectory _Math225_ under _Math_. Then print working directory. Next, remove _Bio_ that we made previously.
 
-      mkdir UCI
-      cd UCI
-      mkdir Bio Computer Math
-      cd Math 
-      mkdir Math225
-      pwd #print working directory will give us "/data/users/jihyec2/UCI/Math/Math225"
+      mkdir UCI #make a new directory called UCI
+      cd UCI #change the directory to UCI
+      mkdir Bio Computer Math #make new subdirectories
+      cd Math #change the directory
+      mkdir Math225 #make a new subdirectory 
+      pwd #print working directory (it will give us "/data/users/jihyec2/UCI/Math/Math225")
       cd ../ #go back to the parent directory of Math, which is UCI
-      rmdir Bio
+      rmdir Bio #remove the directory, Bio
 
 2. Ask a question that requires a student to understand the difference between accessing a column in a matrix with numeric indices versus accessing a column in a data frame with numeric indices. Your question should require an answer comparing the following: mymatrix[,1] vs. mydf[,1] vs. mydf[1] vs. mydf[[1]].
 * Create a 3x6 matrix. Furthermore, obtain a spreadsheet data from the web and subsetting the dataframe like a matrix. Then explain the differences between mymatrix[,1] vs. mydf[,1] vs. mydf[1] vs. mydf[[1]].  
@@ -40,9 +40,9 @@ Hint 2: in order for a script to be executable, all of its parent directories mu
 
       mkdir jihye #make directory as _jihye_
       ls #list the contents of my current directory 
-      cd ./jihye #change directory 
+      cd ./jihye #change directory to jihye
       touch file #create script called _file_
-      ls -l #list the contents of _jihye_ and check the permission status of the contents
+      ls -l #list the contents of _jihye_ and check the permission status of its contents
       chmod 755 file #change the permission of _file_
       ls -l #confirm that permission is changed by showing the list
       cd .. #go back to the parent directory of _jihye_
