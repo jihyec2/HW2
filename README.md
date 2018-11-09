@@ -12,6 +12,9 @@
       cd ../ #go back to the parent directory of Math, which is UCI
       rmdir Bio #remove the directory, Bio
 
+### Question 1 Comments:
+This was very well done! Great job.
+
 2. Ask a question that requires a student to understand the difference between accessing a column in a matrix with numeric indices versus accessing a column in a data frame with numeric indices. Your question should require an answer comparing the following: mymatrix[,1] vs. mydf[,1] vs. mydf[1] vs. mydf[[1]].
 * Create a 3x6 matrix. Furthermore, obtain a spreadsheet data from the web and subsetting the dataframe like a matrix. Then explain the differences between mymatrix[,1] vs. mydf[,1] vs. mydf[1] vs. mydf[[1]].  
 
@@ -49,3 +52,5 @@ Hint 2: in order for a script to be executable, all of its parent directories mu
       chmod 755 jihye #change the permission of jihye
       ls -l #confirm that permission is changed by showing the list
       
+### Question 3 Comments:
+This was also very well done! Great job.
